@@ -1,7 +1,7 @@
 {
   "name": "gpm-app",
-  "version": "1.1.1",
-  "description": "gpm-app: An Ionic project",
+  "version": "1.0.0.",
+  "description": "Aplicação oficial do Grupo Paulista de Montanhismo",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^2.0.4",
