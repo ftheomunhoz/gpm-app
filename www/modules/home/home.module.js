@@ -8,5 +8,5 @@
 (function() {
     "use strict";
 
-    angular.module("gpmapp.home", [])
+    angular.module("gpmapp.home", []);
 })();

@@ -1,0 +1,8 @@
+<div class="card" ng-repeat="evento in ::lista.listaEventos track by $index">
+    <div class="item item-divider" ng-bind="evento.titulo"></div>
+    <div class="item item-text-wrap">
+        <span ng-bind="evento.inicio.data"></span> - <span ng-bind="evento.inicio.hora"></span>
+        <br/>
+        <span ng-bind="evento.fim.data"></span> - <span ng-bind="evento.fim.hora"></span>
+    </div>
+</div>

@@ -22,3 +22,16 @@ ion-item.categoria {
 ion-item.categoria > label {
     font-weight: bold;
 }
+
+.menu-title {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.avatar.logo {
+    margin-top: 10px;
+}
+
+ng-outlet > * > ion-content:first-child {
+    margin-top: 50px;
+}
