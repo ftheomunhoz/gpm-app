@@ -27,10 +27,4 @@
     angular.module("gpmapp").run(function (translateService, translateConfig) {
         translateService.setLanguage(translateConfig.LanguageType.PORTUGUESE);
     });
-
-    //angular.module("gpmapp").value("$routerRootComponent", "home");
-
-    angular.module("gpmapp").component('home2', {
-        template: 'It worked!'
-    });
 })();

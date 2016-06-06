@@ -8,6 +8,7 @@
 (function () {
     "use strict";
 
+    //TODO: substituir por $window
     function run($ionicPlatform) {
         $ionicPlatform.ready(function () {
             if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {

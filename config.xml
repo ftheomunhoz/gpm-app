@@ -8,7 +8,7 @@
     <author email="ftheomunhoz@gmail.com" href="https://github.com/ftheomunhoz">
         Fábio Munhoz
     </author>
-    <content src="/index.html"/>
+    <content src="index.html"/>
     <access origin="*"/>
     <preference name="webviewbounce" value="false"/>
     <preference name="UIWebViewBounce" value="false"/>
