@@ -38,18 +38,18 @@
         <icon density="xhdpi" src="www/assets/images/logo.png" />
         <icon density="xxhdpi" src="www/assets/images/logo.png" />
         <icon density="xxxhdpi" src="www/assets/images/logo.png" />
-        <splash density="land-ldpi" src="www/assets/images/logo.png" />
-        <splash density="land-mdpi" src="www/assets/images/logo.png" />
-        <splash density="land-hdpi" src="www/assets/images/logo.png" />
-        <splash density="land-xhdpi" src="www/assets/images/logo.png" />
-        <splash density="land-xxhdpi" src="www/assets/images/logo.png" />
-        <splash density="land-xxxhdpi" src="www/assets/images/logo.png" />
-        <splash density="port-ldpi" src="www/assets/images/logo.png" />
-        <splash density="port-mdpi" src="www/assets/images/logo.png" />
-        <splash density="port-hdpi" src="www/assets/images/logo.png" />
-        <splash density="port-xhdpi" src="www/assets/images/logo.png" />
-        <splash density="port-xxhdpi" src="www/assets/images/logo.png" />
-        <splash density="port-xxxhdpi" src="www/assets/images/logo.png" />
+        <splash density="land-ldpi" src="www/assets/images/splash.png" />
+        <splash density="land-mdpi" src="www/assets/images/splash.png" />
+        <splash density="land-hdpi" src="www/assets/images/splash.png" />
+        <splash density="land-xhdpi" src="www/assets/images/splash.png" />
+        <splash density="land-xxhdpi" src="www/assets/images/splash.png" />
+        <splash density="land-xxxhdpi" src="www/assets/images/splash.png" />
+        <splash density="port-ldpi" src="www/assets/images/splash.png" />
+        <splash density="port-mdpi" src="www/assets/images/splash.png" />
+        <splash density="port-hdpi" src="www/assets/images/splash.png" />
+        <splash density="port-xhdpi" src="www/assets/images/splash.png" />
+        <splash density="port-xxhdpi" src="www/assets/images/splash.png" />
+        <splash density="port-xxxhdpi" src="www/assets/images/splash.png" />
     </platform>
     <platform name="ios">
         <icon height="57" platform="ios" src="www/res/icon/ios/icon.png" width="57" />
