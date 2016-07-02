@@ -1,0 +1,21 @@
+{
+  "name": "gpm-app",
+  "version": "1.0.0",
+  "description": "Aplicação mobile do Grupo Paulista de Montanhismo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ftheomunhoz/gpm-app.git"
+  },
+  "author": "ftheomunhoz@gmail.com",
+  "license": "Apache-2.0.0",
+  "keywords": [
+    "gpm",
+    "mobile",
+    "app",
+    "grupo paulista montanhismo"
+  ],
+  "bugs": {
+    "url": "https://github.com/ftheomunhoz/gpm-app/issues"
+  },
+  "homepage": "https://github.com/ftheomunhoz/gpm-app"
+}
