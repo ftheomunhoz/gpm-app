@@ -33,13 +33,13 @@
                     }
                 }, 80);
 
-                angular.element($window).bind("resize", function() {
+                angular.element($window).bind("resize orientationchange", function() {
                     adjustLeft();
                 });
 
                 var destroy = scope.$on("$destroy", function() {
                     $interval.cancel(iDirection);
-                    angular.element($window).unbind("resize");
+                    angular.element($window).unbind("resize orientationchange");
                     destroy();
                 });
             },
