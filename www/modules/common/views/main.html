@@ -3,14 +3,14 @@
 </div>
 <footer class="footer navbar-fixed-bottom">
     <div class="container">
-        <div class="row">
-            <div class="col-xs-6">
-                <button type="button" class="btn btn-footer eventos" title="Eventos" ui-sref="app.eventos">
+        <div class="row" current-state>
+            <div class="col-xs-6" ui-sref="app.eventos">
+                <button type="button" class="btn btn-footer eventos" title="Eventos">
                     <i class="fa fa-calendar-o" aria-hidden="true"></i>
                 </button>
             </div>
-            <div class="col-xs-6">
-                <button type="button" class="btn btn-footer galeria" title="Galeria" ui-sref="app.galeria">
+            <div class="col-xs-6" ui-sref="app.galeria">
+                <button type="button" class="btn btn-footer galeria" title="Galeria">
                     <i class="fa fa-picture-o" aria-hidden="true"></i>
                 </button>
             </div>
@@ -24,9 +24,6 @@
                     <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                 </button>
             </div>
-        </div>
-        <div class="row text-center">
-            <div class="color-dot"></div>
         </div>
     </div>
 </footer>
