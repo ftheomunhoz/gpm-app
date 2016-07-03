@@ -1,8 +1,4 @@
-<style>
-    body {
-        overflow: hidden;
-    }
-</style>
+<body-class class="login"></body-class>
 
 <div class="fullscreen-video">
     <video full-height full-height-width="1280" preload autoplay loop muted>
@@ -22,15 +18,15 @@
         </div>
         <div class="row">
             <div class="col-xs-24">
-                <button type="button" class="btn btn-clean">
-                    <span class="pull-left flaticon-interface"></span>Facebook
+                <button type="button" class="btn btn-clean" ng-click="vm.login('FACEBOOK')">
+                    <i class="pull-left fa fa-facebook" aria-hidden="true"></i>Facebook
                 </button>
             </div>
         </div>
         <div class="row">
             <div class="col-xs-24">
-                <button type="button" class="btn btn-clean">
-                    <span class="pull-left flaticon-google-plus-circular-button"></span>Google
+                <button type="button" class="btn btn-clean" ng-click="vm.login('GOOGLE')">
+                    <i class="pull-left fa fa-google-plus" aria-hidden="true"></i>Google
                 </button>
             </div>
         </div>

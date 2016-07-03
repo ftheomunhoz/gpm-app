@@ -7,7 +7,7 @@
 (function () {
     "use strict";
 
-    function fullHeight($window, $interval) {
+    function fullHeight($window, $interval, $location, $anchorScroll) {
         return {
             restrict: 'A',
             link: function (scope, element) {
@@ -33,13 +33,19 @@
                     }
                 }, 80);
 
-                angular.element($window).bind("resize orientationchange", function() {
+                angular.element($window).bind("resize", adjustLeft);
+
+                angular.element($window).bind("orientationchange", function() {
+                    $location.hash('body');
+                    $anchorScroll();
                     adjustLeft();
                 });
 
                 var destroy = scope.$on("$destroy", function() {
                     $interval.cancel(iDirection);
-                    angular.element($window).unbind("resize orientationchange");
+                    angular.element($window).unbind("resize");
+                    angular.element($window).unbind("orientationchange");
+
                     destroy();
                 });
             },
