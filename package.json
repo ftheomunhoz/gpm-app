@@ -20,5 +20,9 @@
   "homepage": "https://github.com/ftheomunhoz/gpm-app",
   "devDependencies": {
     "bower": "^1.7.9"
+  },
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-sofea-build": "^1.1.2"
   }
 }

@@ -32,7 +32,7 @@
 
     <icon src="icon.png" />
 
-    <hook type="before_compile" src="scripts/bower-install.js" />
+    <hook type="before_prepare" src="hooks/before_prepare/bower-install.js" />
 
     <platform name="android">
         <icon density="ldpi" src="www/assets/images/icon.png" />
