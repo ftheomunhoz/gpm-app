@@ -12,7 +12,7 @@
         var vm = this;
 
         vm.login = function () {
-            $state.go("app.eventos")
+            $state.go("app")
         };
     }
 

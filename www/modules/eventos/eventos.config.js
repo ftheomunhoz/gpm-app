@@ -13,6 +13,11 @@
                 url: "/eventos",
                 templateUrl: "modules/eventos/views/eventos.html",
                 controller: "EventosController as vm"
+            })
+            .state("app.eventos-detalhes", {
+                url: "/eventos/{id}",
+                templateUrl: "modules/eventos/views/detalhes-evento.html",
+                controller: "DetalhesEventoController as vm"
             });
     }
 

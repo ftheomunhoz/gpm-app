@@ -1,0 +1,87 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'i',
+1 verbose cli   'bower-cli' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.3
+4 verbose install initial load of C:\workspace\gpm-app\package.json
+5 verbose installManyTop reading scoped package data from C:\workspace\gpm-app\node_modules\bower\package.json
+6 verbose readDependencies loading dependencies from C:\workspace\gpm-app\package.json
+7 silly cache add args [ 'bower-cli', null ]
+8 verbose cache add spec bower-cli
+9 silly cache add parsed spec Result {
+9 silly cache add   raw: 'bower-cli',
+9 silly cache add   scope: null,
+9 silly cache add   name: 'bower-cli',
+9 silly cache add   rawSpec: '',
+9 silly cache add   spec: '*',
+9 silly cache add   type: 'range' }
+10 silly addNamed bower-cli@*
+11 verbose addNamed "*" is a valid semver range for bower-cli
+12 silly addNameRange { name: 'bower-cli', range: '*', hasData: false }
+13 silly mapToRegistry name bower-cli
+14 silly mapToRegistry using default registry
+15 silly mapToRegistry registry https://registry.npmjs.org/
+16 silly mapToRegistry uri https://registry.npmjs.org/bower-cli
+17 verbose addNameRange registry:https://registry.npmjs.org/bower-cli not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/bower-cli
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 00:58:24
+21 verbose request using bearer token for auth
+22 verbose request id 213fe586516f7e14
+23 http request GET https://registry.npmjs.org/bower-cli
+24 http 404 https://registry.npmjs.org/bower-cli
+25 verbose headers { 'content-type': 'application/json',
+25 verbose headers   'cache-control': 'max-age=0',
+25 verbose headers   'content-length': '2',
+25 verbose headers   'accept-ranges': 'bytes',
+25 verbose headers   date: 'Sat, 09 Jul 2016 03:58:24 GMT',
+25 verbose headers   via: '1.1 varnish',
+25 verbose headers   connection: 'keep-alive',
+25 verbose headers   'x-served-by': 'cache-gru7127-GRU',
+25 verbose headers   'x-cache': 'MISS',
+25 verbose headers   'x-cache-hits': '0',
+25 verbose headers   'x-timer': 'S1468036704.440608,VS0,VE147',
+25 verbose headers   vary: 'Accept-Encoding' }
+26 silly get cb [ 404,
+26 silly get   { 'content-type': 'application/json',
+26 silly get     'cache-control': 'max-age=0',
+26 silly get     'content-length': '2',
+26 silly get     'accept-ranges': 'bytes',
+26 silly get     date: 'Sat, 09 Jul 2016 03:58:24 GMT',
+26 silly get     via: '1.1 varnish',
+26 silly get     connection: 'keep-alive',
+26 silly get     'x-served-by': 'cache-gru7127-GRU',
+26 silly get     'x-cache': 'MISS',
+26 silly get     'x-cache-hits': '0',
+26 silly get     'x-timer': 'S1468036704.440608,VS0,VE147',
+26 silly get     vary: 'Accept-Encoding' } ]
+27 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/bower-cli
+27 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+27 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:242:14)
+27 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+27 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:198:22)
+27 verbose stack     at emitTwo (events.js:87:13)
+27 verbose stack     at Request.emit (events.js:172:7)
+27 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1063:14)
+27 verbose stack     at emitOne (events.js:82:20)
+27 verbose stack     at Request.emit (events.js:169:7)
+27 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1009:12)
+28 verbose statusCode 404
+29 verbose pkgid bower-cli
+30 verbose cwd C:\workspace\gpm-app
+31 error Windows_NT 6.1.7601
+32 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "i" "bower-cli"
+33 error node v4.2.3
+34 error npm  v2.14.7
+35 error code E404
+36 error 404 Registry returned 404 for GET on https://registry.npmjs.org/bower-cli
+36 error 404
+36 error 404 'bower-cli' is not in the npm registry.
+36 error 404 You should bug the author to publish it (or use the name yourself!)
+36 error 404 It was specified as a dependency of 'gpm-app'
+36 error 404
+36 error 404 Note that you can also install from a
+36 error 404 tarball, folder, http url, or git url.
+37 verbose exit [ 1, true ]

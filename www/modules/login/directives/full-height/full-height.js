@@ -18,7 +18,7 @@
                 var adjustLeft = function () {
                     direction = -1;
                     left = 0;
-                    maxLeft = scope.fullHeightWidth - $window.outerWidth;
+                    maxLeft = scope.fullHeightWidth - $window.outerWidth - 10;
                     element.css(left + "px");
                     element.css("min-height", $window.outerHeight + "px");
                 };
@@ -31,7 +31,7 @@
                     if (left < (maxLeft*-1) || left == 0) {
                         direction = direction * -1;
                     }
-                }, 80);
+                }, 100);
 
                 angular.element($window).bind("resize", adjustLeft);
 

@@ -11,6 +11,8 @@
     function controller($filter) {
         var vm = this;
 
+        vm.busca = "";
+
         vm.TIPO = {
             ESCALADA: "Escalada",
             TRAVESSIA: "Travessia"
@@ -23,31 +25,26 @@
         };
 
         var evento = {
-            titulo: "NOME EVENTONOME EVENTONOME EVENTONOME EVENTONOME EVENTONOME EVENTO",
+            id: "1921-ISA",
+            titulo: "NOME EVENTO",
             tipo: "Escalada",
             data: $filter("date")(new Date(), "dd/MM/yyyy"),
-            local: {
-                nome: "LOCAL EVENTO",
-                x: 1,
-                y: 2
-            },
-            pontoEncontro: {
-                nome: "BAR DE ENCONTRO",
-                x: 1,
-                y: 2
-            },
-            coordenador: "Chiko",
+            local: "LOCAL EVENTO",
             custos: $filter("currency")(25.00, "R$ "),
             interessados: 6,
             vagas: 8,
-            dificuldadeTipo: "easy",
-            dificuldade: "4A"
+            dificuldadeTipo: "easy"
         };
 
         vm.eventoList = [];
 
-        for (var i = 0; i < 10; i++)
-            vm.eventoList.push(evento);
+        for (var i = 0; i < 20; i++) {
+            var item = angular.copy(evento);
+            item.titulo = item.titulo + " " + (i+1);
+            vm.eventoList.push(item);
+        }
+
+
     }
 
     angular.module("gpm-app.eventos").controller("EventosController", controller);

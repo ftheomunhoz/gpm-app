@@ -10,7 +10,7 @@
     function config($stateProvider) {
         $stateProvider
             .state("app", {
-                abstract: true,
+                url: "/app",
                 templateUrl: "modules/common/views/main.html"
             });
     }

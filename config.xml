@@ -29,15 +29,17 @@
     <plugin name="cordova-plugin-splashscreen" source="npm" spec="~3.2.1" />
     <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.2" />
     <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0" />
-    <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
-    <icon src="www/assets/images/logo.png" />
+    <icon src="www/assets/images/icon.png" />
+
+    <hook type="before_prepare" src="scripts/bower-install.js" />
+
     <platform name="android">
-        <icon density="ldpi" src="www/assets/images/logo.png" />
-        <icon density="mdpi" src="www/assets/images/logo.png" />
-        <icon density="hdpi" src="www/assets/images/logo.png" />
-        <icon density="xhdpi" src="www/assets/images/logo.png" />
-        <icon density="xxhdpi" src="www/assets/images/logo.png" />
-        <icon density="xxxhdpi" src="www/assets/images/logo.png" />
+        <icon density="ldpi" src="www/assets/images/icon.png" />
+        <icon density="mdpi" src="www/assets/images/icon.png" />
+        <icon density="hdpi" src="www/assets/images/icon.png" />
+        <icon density="xhdpi" src="www/assets/images/icon.png" />
+        <icon density="xxhdpi" src="www/assets/images/icon.png" />
+        <icon density="xxxhdpi" src="www/assets/images/icon.png" />
         <splash density="land-ldpi" src="www/assets/images/splash.png" />
         <splash density="land-mdpi" src="www/assets/images/splash.png" />
         <splash density="land-hdpi" src="www/assets/images/splash.png" />
