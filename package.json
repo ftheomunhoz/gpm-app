@@ -29,7 +29,7 @@
     "grunt-sofea-build": "^1.1.2"
   },
   "dependencies": {
-
+    "grunt-contrib-copy": "^1.0.0"
   },
   "engines": {
     "node": "4.2.3",

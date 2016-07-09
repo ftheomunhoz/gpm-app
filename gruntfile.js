@@ -8,6 +8,7 @@
 
 module.exports = function (grunt) {
     grunt.loadNpmTasks("grunt-sofea-build");
+    grunt.loadNpmTasks("grunt-contrib-copy");
 
     var minify = grunt.option("minify") || false;
 
@@ -16,14 +17,14 @@ module.exports = function (grunt) {
             main: {
                 minify: minify,
                 options: {
-                    cwd: "www/app",
-                    dest: "../deploy",
+                    cwd: "app",
+                    dest: "../www",
                     src: "",
                     templates: {
                         "gpmApp.common": {
-                            cwd: "www/app",
+                            cwd: "app",
                             src: ["modules/common/directives/**/*.html"],
-                            dest: "www/app/modules/common/templates.js"
+                            dest: "app/modules/common/templates.js"
                         }
                     }
                 },
@@ -33,15 +34,15 @@ module.exports = function (grunt) {
                             {
                                 expand: true,
                                 flatten: true,
-                                src: ["www/app/bower_components/font-awesome/fonts/*.*"],
-                                dest: "www/deploy/assets/fonts",
+                                src: ["app/bower_components/font-awesome/fonts/*.*"],
+                                dest: "www/assets/fonts",
                                 filter: "isFile"
                             },
                             {
                                 expand: true,
                                 flatten: true,
-                                src: ["www/app/assets/styles/open-sans/*.woff2"],
-                                dest: "www/deploy/assets/styles",
+                                src: ["app/assets/styles/open-sans/*.woff2"],
+                                dest: "www/assets/styles",
                                 filter: "isFile"
                             }
                         ]
@@ -51,11 +52,29 @@ module.exports = function (grunt) {
                             {
                                 expand: true,
                                 flatten: true,
-                                src: ["www/app/assets/images/icon.png", "www/app/assets/images/splash.png"],
-                                dest: "www/deploy",
+                                src: ["app/assets/images/icon.png", "app/assets/images/splash.png"],
+                                dest: "www",
                                 filter: "isFile"
                             }
                         ]
+                    },
+                    cordova: {
+                        files: [
+                            {
+                                expand: true,
+                                flatten: true,
+                                cwd: "www",
+                                src: ["index.html"],
+                                dest: "www",
+                                filter: 'isFile'
+                            }
+                        ],
+                        options: {
+                            process: function (content) {
+                                return content
+                                    .concat('<script type="text/javascript" src="cordova.js"></script>');
+                            }
+                        }
                     }
                 }
             }

@@ -10,7 +10,7 @@
     <meta http-equiv="Content-Security-Policy"
           content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *"/>
 
-    <!-- build:css(www/app) assets/styles/vendor.css -->
+    <!-- build:css(app) assets/styles/vendor.css -->
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="assets/styles/bootstrap/css/bootstrap.min.css"/>
 
@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.css"/>
     <!-- endbuild -->
 
-    <!-- build:css(www/app) assets/styles/app.css -->
+    <!-- build:css(app) assets/styles/app.css -->
     <!-- App -->
     <link rel="stylesheet" type="text/css" href="assets/styles/app.css"/>
     <link rel="stylesheet" type="text/css" href="assets/styles/open-sans/open-sans.css"/>
@@ -31,14 +31,14 @@
 <div ui-view></div>
 
 
-<!-- build:js(www/app) scripts/require.js -->
+<!-- build:js(app) scripts/require.js -->
 <!--<script src="bower_components/requirejs/require.js"></script>-->
 <!-- endbuild -->
 
-<!-- build:js(www/app) scripts/vendor.js -->
 <!-- Cordova -->
 <script type="text/javascript" src="cordova.js"></script>
 
+<!-- build:js(app) scripts/vendor.js -->
 <!-- AngularJS e módulos-->
 <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
 <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
@@ -46,7 +46,7 @@
 <script type="text/javascript" src="bower_components/angular-google-maps/dist/angular-google-maps.js"></script>
 <!-- endbuild -->
 
-<!-- build:js scripts/modules.js -->
+<!-- build:js(app) scripts/modules.js -->
 <script type="text/javascript" src="gpm-app.js"></script>
 <script type="text/javascript" src="modules/common/common.module.js"></script>
 <script type="text/javascript" src="modules/common/common.config.js"></script>
@@ -58,21 +58,21 @@
 <script type="text/javascript" src="modules/galeria/galeria.config.js"></script>
 <!-- endbuild -->
 
-<!-- build:js scripts/gpm-app.common.js -->
+<!-- build:js(app) scripts/gpm-app.common.js -->
 <script type="text/javascript" src="modules/common/directives/body-class/body-class.js"></script>
 <!--<script type="text/javascript" src="modules/common/templates.js"></script>-->
 <!-- endbuild -->
 
-<!-- build:js scripts/gpm-app.login.js -->
+<!-- build:js(app) scripts/gpm-app.login.js -->
 <script type="text/javascript" src="modules/login/directives/full-height/full-height.js"></script>
 <script type="text/javascript" src="modules/login/controllers/login.js"></script>
 <!-- endbuild -->
 
-<!-- build:js scripts/gpm-app.eventos.js -->
+<!-- build:js(app) scripts/gpm-app.eventos.js -->
 <script type="text/javascript" src="modules/eventos/controllers/eventos.js"></script>
 <!-- endbuild -->
 
-<!-- build:js scripts/gpm-app.galeria.js -->
+<!-- build:js(app) scripts/gpm-app.galeria.js -->
 <script type="text/javascript" src="modules/galeria/controllers/galeria.js"></script>
 <!-- endbuild -->
 
