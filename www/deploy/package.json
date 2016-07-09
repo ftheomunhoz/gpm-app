@@ -1,0 +1,38 @@
+{
+  "name": "gpm-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "Aplicação mobile do Grupo Paulista de Montanhismo",
+  "scripts": {
+    "start": "node index deploy",
+    "postinstall": "bower install && grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ftheomunhoz/gpm-app.git"
+  },
+  "author": "ftheomunhoz@gmail.com",
+  "license": "Apache-2.0",
+  "keywords": [
+    "gpm",
+    "mobile",
+    "app",
+    "grupo paulista montanhismo"
+  ],
+  "bugs": {
+    "url": "https://github.com/ftheomunhoz/gpm-app/issues"
+  },
+  "homepage": "https://github.com/ftheomunhoz/gpm-app",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "bower": "^1.7.9",
+    "grunt-sofea-build": "^1.1.2"
+  },
+  "dependencies": {
+
+  },
+  "engines": {
+    "node": "4.2.3",
+    "npm": "2.14.7"
+  }
+}

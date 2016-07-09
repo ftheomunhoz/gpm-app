@@ -16,14 +16,14 @@ module.exports = function (grunt) {
             main: {
                 minify: minify,
                 options: {
-                    cwd: "app",
-                    dest: "../www",
+                    cwd: "www/app",
+                    dest: "../deploy",
                     src: "",
                     templates: {
                         "gpmApp.common": {
-                            cwd: "app",
+                            cwd: "www/app",
                             src: ["modules/common/directives/**/*.html"],
-                            dest: "app/modules/common/templates.js"
+                            dest: "www/app/modules/common/templates.js"
                         }
                     }
                 },
@@ -33,15 +33,15 @@ module.exports = function (grunt) {
                             {
                                 expand: true,
                                 flatten: true,
-                                src: ["app/bower_components/font-awesome/fonts/*.*"],
-                                dest: "www/assets/fonts",
+                                src: ["www/app/bower_components/font-awesome/fonts/*.*"],
+                                dest: "www/deploy/assets/fonts",
                                 filter: "isFile"
                             },
                             {
                                 expand: true,
                                 flatten: true,
-                                src: ["app/assets/styles/open-sans/*.woff2"],
-                                dest: "www/assets/styles",
+                                src: ["www/app/assets/styles/open-sans/*.woff2"],
+                                dest: "www/deploy/assets/styles",
                                 filter: "isFile"
                             }
                         ]
@@ -51,8 +51,8 @@ module.exports = function (grunt) {
                             {
                                 expand: true,
                                 flatten: true,
-                                src: ["app/assets/images/icon.png", "app/assets/images/splash.png"],
-                                dest: "www",
+                                src: ["www/app/assets/images/icon.png", "www/app/assets/images/splash.png"],
+                                dest: "www/deploy",
                                 filter: "isFile"
                             }
                         ]
