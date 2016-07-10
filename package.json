@@ -24,13 +24,12 @@
   },
   "homepage": "https://github.com/ftheomunhoz/gpm-app",
   "devDependencies": {
-    "grunt": "^1.0.1",
     "bower": "^1.7.9",
+    "grunt": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
     "grunt-sofea-build": "^1.1.2"
   },
-  "dependencies": {
-    "grunt-contrib-copy": "^1.0.0"
-  },
+  "dependencies": {},
   "engines": {
     "node": "4.2.3",
     "npm": "2.14.7"

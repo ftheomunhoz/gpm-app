@@ -1,25 +1,45 @@
 <div class="container-fluid main-container">
-    <div class="row">
+    <div class="row animated" animate-menu="app.eventos">
+        <div class="col-xs-3">
+            <i class="material-icons menu-icon" ui-sref="app.eventos">event</i>
+            <animate-menu-back></animate-menu-back>
+        </div>
+        <div class="col-xs-21" ui-sref="app.eventos">
+            <label class="menu-label">Eventos e Saídas</label>
+        </div>
+
+        <div class="search-row">
+            <div class="col-xs-24">
+                <input placeholder="Procure aqui..." type="text" ng-model="main.search" name="txtSearch"/>
+                <i class="menu-search material-icons">search</i>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <div class="row animated" animate-menu>
+        <div class="col-xs-3">
+            <i class="material-icons menu-icon">photo_library</i>
+        </div>
+        <div class="col-xs-21">
+            <label class="menu-label">Galeria</label>
+        </div>
+    </div>
+
+    <div class="row animated">
 
     </div>
 
-    <div class="row">
+    <div class="row animated">
 
     </div>
 
-    <div class="row">
+    <div class="row animated">
 
     </div>
 
-    <div class="row">
+    <div class="row animated">
 
     </div>
-
-    <div class="row">
-
-    </div>
-
-    <div class="row">
-
-    </div>
+    <div class="content-row animated" ui-view></div>
 </div>

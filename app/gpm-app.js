@@ -14,6 +14,7 @@
         "gpm-app.eventos",
         "gpm-app.galeria",
 
-        "uiGmapgoogle-maps"
+        "uiGmapgoogle-maps",
+        "ngAnimate"
     ]);
 })();

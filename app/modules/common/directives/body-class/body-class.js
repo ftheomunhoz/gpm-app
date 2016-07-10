@@ -22,5 +22,5 @@
         }
     }
 
-    angular.module('gpm-app.common').directive('bodyClass', bodyClass);
+    angular.module("gpm-app.common").directive("bodyClass", bodyClass);
 })();

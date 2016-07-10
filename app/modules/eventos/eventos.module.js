@@ -8,5 +8,5 @@
 (function () {
     "use strict";
 
-    angular.module("gpm-app.eventos", ["ui.router", "uiGmapgoogle-maps"]);
+    angular.module("gpm-app.eventos", ["ui.router", "uiGmapgoogle-maps", "ngAnimate"]);
 })();

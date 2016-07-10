@@ -11,5 +11,9 @@
 }
 
 .fa {
-    font-family: 'FontAwesome','Open Sans', sans-serif !important;
+    font-family: 'FontAwesome', 'Open Sans', sans-serif !important;
+}
+
+.material-icons {
+    font-family: 'Material Icons', 'Open Sans', sans-serif !important;
 }

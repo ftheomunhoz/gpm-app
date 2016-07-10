@@ -14,8 +14,10 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="assets/styles/bootstrap/css/bootstrap.min.css"/>
 
-    <!-- Font Awesome -->
+    <!-- Layout -->
     <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.css"/>
+    <link rel="stylesheet" type="text/css" href="bower_components/material-design-icons/iconfont/material-icons.css"/>
+    <link rel="stylesheet" type="text/css" href="bower_components/animate.css/animate.css"/>
     <!-- endbuild -->
 
     <!-- build:css(app) assets/styles/app.css -->
@@ -44,6 +46,7 @@
 <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 <script type="text/javascript" src="bower_components/angular-simple-logger/dist/angular-simple-logger.light.min.js"></script>
 <script type="text/javascript" src="bower_components/angular-google-maps/dist/angular-google-maps.js"></script>
+<script type="text/javascript" src="bower_components/angular-animate/angular-animate.js"></script>
 <!-- endbuild -->
 
 <!-- build:js(app) scripts/modules.js -->
@@ -59,7 +62,11 @@
 <!-- endbuild -->
 
 <!-- build:js(app) scripts/gpm-app.common.js -->
+<script type="text/javascript" src="modules/common/controllers/main.js"></script>
+<script type="text/javascript" src="modules/common/factories/animate-menu-element.js"></script>
 <script type="text/javascript" src="modules/common/directives/body-class/body-class.js"></script>
+<script type="text/javascript" src="modules/common/directives/animate-menu/animate-menu.js"></script>
+<script type="text/javascript" src="modules/common/directives/animate-menu-back/animate-menu-back.js"></script>
 <!--<script type="text/javascript" src="modules/common/templates.js"></script>-->
 <!-- endbuild -->
 
