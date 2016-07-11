@@ -10,6 +10,7 @@
     function controller() {
         var vm = this;
 
+        vm.search = "";
     }
 
     angular.module("gpm-app.common").controller("MainController", controller)

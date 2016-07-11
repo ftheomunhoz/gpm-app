@@ -1,5 +1,24 @@
-<div class="row">
+<div class="row evento-row" ng-repeat="evento in vm.eventoList | filter: main.search track by evento.id">
     <div class="col-xs-24">
-        <h1 ng-bind="main.search"></h1>
+        <div class="row">
+            <div class="col-xs-3 align-left evento-list-icone">
+                <i ng-if="::evento.tipo === vm.TIPO.TRAVESSIA" class="material-icons">directions_walk</i>
+                <i ng-if="::evento.tipo === vm.TIPO.ESCALADA" class="material-icons">terrain</i>
+            </div>
+            <div class="col-xs-14">
+                <label ng-bind="::evento.titulo"></label>
+            </div>
+            <div class="col-xs-7 align-right">
+                <span ng-bind="::evento.data"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-offset-3 col-xs-14">
+                <span ng-bind="::evento.local"></span>
+            </div>
+            <div class="col-xs-7 align-right">
+                <span ng-bind="::evento.interessados"></span> / <span ng-bind="::evento.vagas"></span>
+            </div>
+        </div>
     </div>
 </div>

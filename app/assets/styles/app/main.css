@@ -1,0 +1,69 @@
+* {
+    color: #e6e9ed;
+}
+
+body {
+    overflow-x: hidden;;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #656d78;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #656d78;
+    opacity: 1;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #656d78;
+    opacity: 1;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #656d78;
+}
+
+.btn-invisible {
+    background-color: transparent;
+    border: none;
+    padding-top: 0;
+}
+
+.hand {
+    cursor: pointer;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* BUTTONS */
+.btn-clean {
+    background: transparent;
+    border: 0.1em solid #e6e9ed;
+}
+
+.btn-clean:hover {
+    background-color: #8cc152;
+}
+
+button {
+    text-transform: uppercase;
+}
+
+/* BORDER-RADIUS */
+
+.login-logo,
+.eventos-card,
+button {
+    border-radius: 0.25em;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-left {
+    text-align: left;
+}

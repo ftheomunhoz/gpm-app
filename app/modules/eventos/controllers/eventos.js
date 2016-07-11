@@ -19,32 +19,49 @@
         };
 
         vm.DIFICULDADE = {
-            EASY: "easy",
-            MEDIUM: "medium",
-            HARD: "hard"
+            FACIL: "facil",
+            MEDIO: "medio",
+            DIFICIL: "dificil"
+        };
+
+        vm.filtro = function (filtro) {
+            var list = [];
+            filtro = filtro.toUpperCase();
+
+            for (var i = 0, len = eventoList.length; i < len; i++) {
+                var item = eventoList[i];
+
+                if (item.titulo.toUpperCase().indexOf(filtro) >= 0 ||
+                    item.tipo.toUpperCase().indexOf(filtro) >= 0 ||
+                    item.local.toUpperCase().indexOf(filtro) >= 0 ||
+                    item.data.toUpperCase().indexOf(filtro) >= 0) {
+                    list.push(item);
+                }
+            }
+
+            vm.eventoList = list;
         };
 
         var evento = {
-            id: "1921-ISA",
             titulo: "NOME EVENTO",
             tipo: "Escalada",
             data: $filter("date")(new Date(), "dd/MM/yyyy"),
             local: "LOCAL EVENTO",
-            custos: $filter("currency")(25.00, "R$ "),
             interessados: 6,
-            vagas: 8,
-            dificuldadeTipo: "easy"
+            vagas: 8
         };
 
         vm.eventoList = [];
+        var eventoList = [];
 
         for (var i = 0; i < 20; i++) {
             var item = angular.copy(evento);
-            item.titulo = item.titulo + " " + (i+1);
-            vm.eventoList.push(item);
+            item.id = "ID-" + i;
+            item.titulo = item.titulo + " " + (i + 1);
+            eventoList.push(item);
         }
 
-
+        vm.eventoList = eventoList;
     }
 
     angular.module("gpm-app.eventos").controller("EventosController", controller);

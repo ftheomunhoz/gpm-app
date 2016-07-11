@@ -3,7 +3,6 @@
 
     function animateMenuBack() {
         return {
-            replace: true,
             restrict: "E",
             templateUrl: "modules/common/directives/animate-menu-back/animate-menu-back.html",
             controllerAs: "vm",
@@ -13,7 +12,7 @@
                 vm.back = function () {
                     var el = animateMenuElement.element();
                     animateMenuElement.clear();
-                    
+
                     el.removeClass("active");
 
                     var siblings = el.parent().children();

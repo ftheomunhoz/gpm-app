@@ -1,0 +1,50 @@
+/* LOGIN */
+
+body.login {
+    overflow: hidden;
+}
+
+.fullscreen-video {
+    position: relative;
+}
+
+.fullscreen-video video {
+    position: absolute;
+    overflow: hidden;
+}
+
+.fullscreen-video .container {
+    text-align: center;
+}
+
+.fullscreen-video .container .row:nth-child(1) {
+    margin-top: 1.5em;
+}
+
+.fullscreen-video .container .row:nth-child(2) {
+    margin-top: 2.5em;
+}
+
+.fullscreen-video .container .row:nth-child(3) {
+    margin-top: 4.5em;
+}
+
+.fullscreen-video .container .row:nth-child(4) {
+    margin-top: 1em;
+}
+
+.fullscreen-video .container .row button i {
+    margin-top: 3px;
+}
+
+.fullscreen-video button {
+    width: 20em;
+}
+
+.login-title {
+    font-size: 1em;
+}
+
+.login-logo {
+    max-width: 4em;
+}

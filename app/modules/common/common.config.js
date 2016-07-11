@@ -12,7 +12,7 @@
             .state("app", {
                 url: "/app",
                 templateUrl: "modules/common/views/main.html",
-                controller: "MainController as vm"
+                controller: "MainController as main"
             });
     }
 
