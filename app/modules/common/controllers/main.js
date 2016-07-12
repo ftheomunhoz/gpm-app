@@ -11,6 +11,7 @@
         var vm = this;
 
         vm.search = "";
+        vm.showSearchBar = true;
     }
 
     angular.module("gpm-app.common").controller("MainController", controller)

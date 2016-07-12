@@ -1,28 +1,23 @@
 (function () {
     "use strict";
 
-    function animateMenu(animateMenuElement) {
+    function animateMenu() {
         return {
             link: function (scope, element) {
-                var toggleClass = function () {
-                    if (animateMenuElement.element() === undefined) {
+                var oStateSuccess = scope.$on("$stateChangeSuccess", function (e, state) {
+                    if (state.name.indexOf(scope.targetState) === 0) {
                         element.addClass("active");
                         element.parent().addClass("active");
                         element.addClass("flipInX");
-
-                        animateMenuElement.element(element);
                     }
-                };
-
-                var oStateSuccess = scope.$on("$stateChangeSuccess", function (e, state) {
-                    if (scope.targetState === state.name) {
-                        toggleClass();
+                    else if (state.name === "app") {
+                        element.removeClass("active");
+                        element.parent().removeClass("active");
+                        element.removeClass("flipInX");
                     }
                 });
 
                 var destroy = scope.$on("$destroy", function () {
-                    element.unbind("click");
-
                     oStateSuccess();
                     destroy();
                 });

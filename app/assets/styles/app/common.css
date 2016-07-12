@@ -23,6 +23,11 @@
 
 .main-container > .row.flipInX {
     height: 110px;
+    transition: all ease-in-out 0.2s;
+}
+
+.main-container.search-hidden > .row.flipInX {
+    height: 55px;
 }
 
 .main-container > .row:nth-child(1) {
@@ -166,27 +171,32 @@
     right: 1em;
 }
 
-.content-row {
-    display: none;
-    margin-top: 10em;
-}
-
 .search-row ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-     color: #656d78;
+     color: #e6e9ed;
  }
 
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color: #656d78;
+    color: #e6e9ed;
     opacity: 1;
 }
 
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color: #656d78;
+    color: #e6e9ed;
     opacity: 1;
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #656d78;
+    color: #e6e9ed;
+}
+
+.content-row {
+    display: none;
+    margin-top: 10em;
+    transition: all ease-in-out 0.2s;
+}
+
+.main-container.search-hidden ~ .content-row {
+    margin-top: 20em;
 }
 
 .main-container.active ~ .content-row {

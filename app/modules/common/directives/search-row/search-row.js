@@ -7,7 +7,7 @@
 (function () {
     "use strict";
 
-    function directive() {
+    function directive($state) {
         return {
             restrict: "E",
             templateUrl: "modules/common/directives/search-row/search-row.html",
@@ -20,10 +20,35 @@
                 var vm = this;
 
                 vm.search = "";
+                vm.hideSearch = false;
 
                 vm.clearSearch = function () {
                     vm.search = "";
                 };
+            },
+            link: function (scope, element) {
+                var parent = angular.element(element).parent().parent();
+
+                var checkHideSearch = function(state) {
+                    scope.vm.hideSearch = state.hideSearch === true;
+
+                    if (scope.vm.hideSearch === true) {
+                        parent.addClass("search-hidden");
+                    }
+                    else {
+                        parent.removeClass("search-hidden");
+                    }
+                };
+                checkHideSearch($state.current);
+
+                var oStateSuccess = scope.$on("$stateChangeSuccess", function (e, state) {
+                    checkHideSearch(state);
+                });
+
+                var destroy = scope.$on("$destroy", function () {
+                    oStateSuccess();
+                    destroy();
+                });
             }
         };
     }

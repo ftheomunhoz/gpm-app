@@ -8,7 +8,7 @@
 (function () {
     "use strict";
 
-    function controller($filter) {
+    function controller($state, $filter) {
         var vm = this;
 
         vm.busca = "";
@@ -62,6 +62,10 @@
         }
 
         vm.eventoList = eventoList;
+
+        vm.select = function(id) {
+            $state.go("app.eventos.detalhes", {id: id});
+        };
     }
 
     angular.module("gpm-app.eventos").controller("EventosController", controller);

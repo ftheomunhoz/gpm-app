@@ -21,7 +21,7 @@ module.exports = function (grunt) {
                     dest: "../www",
                     src: "",
                     templates: {
-                        "gpmApp.common": {
+                        "gpm-app.common": {
                             cwd: "app",
                             src: ["modules/common/directives/**/*.html"],
                             dest: "app/modules/common/templates.js"

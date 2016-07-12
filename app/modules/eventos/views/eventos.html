@@ -1,4 +1,6 @@
-<div class="row evento-row" ng-repeat="evento in vm.eventoList | filter: main.search track by evento.id">
+<div class="row evento-row"
+     ng-repeat="evento in vm.eventoList | filter: main.search track by evento.id"
+     ng-click="vm.select(evento.id);">
     <div class="col-xs-24">
         <div class="row">
             <div class="col-xs-3 align-left evento-list-icone">
