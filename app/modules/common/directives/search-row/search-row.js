@@ -29,7 +29,14 @@
             link: function (scope, element) {
                 var parent = angular.element(element).parent().parent();
 
-                var checkHideSearch = function(state) {
+                var checkHideSearch = function (state) {
+                    if (state.views) {
+                        for (var v in state.views) {
+                            checkHideSearch(state.views[v]);
+                            return;
+                        }
+                    }
+
                     scope.vm.hideSearch = state.hideSearch === true;
 
                     if (scope.vm.hideSearch === true) {

@@ -13,6 +13,7 @@
         "gpm-app.common",
         "gpm-app.eventos",
         "gpm-app.galeria",
+        "gpm-app.repositorio",
 
         "uiGmapgoogle-maps",
         "ngAnimate"

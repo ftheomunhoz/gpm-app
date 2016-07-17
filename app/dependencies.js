@@ -20,6 +20,9 @@
         },
         "gpm-app.galeria": {
             deps: ["modules"]
+        },
+        "gpm-app.repositorio": {
+            deps: ["modules"]
         }
     };
 

@@ -8,5 +8,8 @@
 (function () {
     "use strict";
 
-    angular.module("gpm-app.common", ["ui.router"]);
+    angular.module("gpm-app.common", [
+        "ui.router",
+        "uiGmapgoogle-maps"
+    ]);
 })();

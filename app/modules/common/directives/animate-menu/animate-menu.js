@@ -1,9 +1,15 @@
 (function () {
     "use strict";
 
-    function animateMenu() {
+    function animateMenu($state) {
         return {
             link: function (scope, element) {
+                element.bind("click", function(e) {
+                    if (!e.isDefaultPrevented()) {
+                        $state.go(scope.targetState);
+                    }
+                });
+
                 var oStateSuccess = scope.$on("$stateChangeSuccess", function (e, state) {
                     if (state.name.indexOf(scope.targetState) === 0) {
                         element.addClass("active");
@@ -18,6 +24,7 @@
                 });
 
                 var destroy = scope.$on("$destroy", function () {
+                    element.unbind("click");
                     oStateSuccess();
                     destroy();
                 });

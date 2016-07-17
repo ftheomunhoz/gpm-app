@@ -1,0 +1,10 @@
+.repositorio-map .angular-google-map-container {
+    width: 100%;
+    height: 70vh;
+    margin-top: -20px;
+    transition: all ease-in-out 0.3s;
+}
+
+.main-container.search-hidden ~ .content-row .repositorio-map .angular-google-map-container {
+    height: 49vh;
+}

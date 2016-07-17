@@ -1,0 +1,19 @@
+<div class="row repositorio-detalhes">
+    <div ui-view="detail"/>
+</div>
+<div class="row">
+    <div class="col-xs-24 no-margin no-padding repositorio-map">
+        <ui-gmap-google-map class="col-md-8"
+                            center="vm.map.center"
+                            zoom="vm.map.zoom"
+                            dragging="vm.map.dragging"
+                            events="vm.map.events"
+                            options="vm.map.options"
+                            pan="true"
+                            control="vm.map.control"
+                            ng-if="vm.mapLoaded"
+        >
+            <ui-gmap-markers models="vm.locais" coords="'coords'" click="vm.selectEvent" icon="'icon'"></ui-gmap-markers>
+        </ui-gmap-google-map>
+    </div>
+</div>

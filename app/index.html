@@ -8,7 +8,7 @@
     <meta name="viewport"
           content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
     <meta http-equiv="Content-Security-Policy"
-          content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *"/>
+          content="default-src * 'unsafe-inline'; media-src *"/>
 
     <!-- build:css(app) assets/styles/vendor.css -->
     <!-- Bootstrap -->
@@ -27,6 +27,7 @@
     <link rel="stylesheet" type="text/css" href="assets/styles/app/common.css"/>
     <link rel="stylesheet" type="text/css" href="assets/styles/app/login.css"/>
     <link rel="stylesheet" type="text/css" href="assets/styles/app/eventos.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/styles/app/repositorio.css"/>
     <link rel="stylesheet" type="text/css" href="assets/styles/open-sans/open-sans.css"/>
     <!-- endbuild -->
 
@@ -49,12 +50,14 @@
 <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
 <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 <script type="text/javascript" src="bower_components/angular-simple-logger/dist/angular-simple-logger.light.min.js"></script>
-<script type="text/javascript" src="bower_components/angular-google-maps/dist/angular-google-maps.js"></script>
-<script type="text/javascript" src="bower_components/angular-animate/angular-animate.js"></script>
+<script type="text/javascript" src="bower_components/angular-google-maps/dist/angular-google-maps.min.js"></script>
+<script type="text/javascript" src="bower_components/angular-animate/angular-animate.min.js"></script>
+<script type="text/javascript" src="bower_components/lodash/dist/lodash.min.js"></script>
 <!-- endbuild -->
 
 <!-- build:js(app) scripts/modules.js -->
 <script type="text/javascript" src="gpm-app.js"></script>
+<script type="text/javascript" src="config/settings.js"></script>
 <script type="text/javascript" src="modules/common/common.module.js"></script>
 <script type="text/javascript" src="modules/common/common.config.js"></script>
 <script type="text/javascript" src="modules/login/login.module.js"></script>
@@ -63,6 +66,8 @@
 <script type="text/javascript" src="modules/eventos/eventos.config.js"></script>
 <script type="text/javascript" src="modules/galeria/galeria.module.js"></script>
 <script type="text/javascript" src="modules/galeria/galeria.config.js"></script>
+<script type="text/javascript" src="modules/repositorio/repositorio.module.js"></script>
+<script type="text/javascript" src="modules/repositorio/repositorio.config.js"></script>
 <!-- endbuild -->
 
 <!-- build:js(app) scripts/gpm-app.common.js -->
@@ -85,6 +90,11 @@
 
 <!-- build:js(app) scripts/gpm-app.galeria.js -->
 <script type="text/javascript" src="modules/galeria/controllers/galeria.js"></script>
+<!-- endbuild -->
+
+<!-- build:js(app) scripts/gpm-app.repositorio.js -->
+<script type="text/javascript" src="modules/repositorio/controllers/repositorio.js"></script>
+<script type="text/javascript" src="modules/repositorio/controllers/detalhes-repositorio.js"></script>
 <!-- endbuild -->
 
 </body>

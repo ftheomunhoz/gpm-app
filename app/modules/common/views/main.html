@@ -1,10 +1,10 @@
 <div class="container-fluid main-container">
     <div class="row animated" animate-menu="app.eventos">
         <div class="col-xs-3">
-            <i class="material-icons menu-icon" ui-sref="app.eventos">event</i>
+            <i class="material-icons menu-icon">event</i>
             <animate-menu-back></animate-menu-back>
         </div>
-        <div class="col-xs-21" ui-sref="app.eventos">
+        <div class="col-xs-21">
             <label class="menu-label">Eventos e Saídas</label>
         </div>
         <search-row search="main.search"></search-row>
@@ -13,27 +13,47 @@
     <div class="row animated" animate-menu="app.galeria">
         <div class="col-xs-3">
             <i class="material-icons menu-icon">photo_library</i>
+            <animate-menu-back></animate-menu-back>
         </div>
         <div class="col-xs-21">
             <label class="menu-label">Galeria</label>
         </div>
+        <search-row search="main.search"></search-row>
     </div>
 
-    <div class="row animated">
-
+    <div class="row animated" animate-menu="app.cursos">
+        <div class="col-xs-3">
+            <i class="material-icons menu-icon">terrain</i>
+            <animate-menu-back></animate-menu-back>
+        </div>
+        <div class="col-xs-21">
+            <label class="menu-label">Cursos</label>
+        </div>
+        <search-row search="main.search"></search-row>
     </div>
 
-    <div class="row animated">
-
+    <div class="row animated" animate-menu="app.repositorio">
+        <div class="col-xs-3">
+            <i class="material-icons menu-icon">map</i>
+            <animate-menu-back></animate-menu-back>
+        </div>
+        <div class="col-xs-21">
+            <label class="menu-label">Repositório</label>
+        </div>
+        <search-row search="main.search"></search-row>
     </div>
 
-    <div class="row animated">
-
+    <div class="row animated" animate-menu="app.utilidades">
+        <div class="col-xs-3">
+            <i class="material-icons menu-icon">build</i>
+            <animate-menu-back></animate-menu-back>
+        </div>
+        <div class="col-xs-21">
+            <label class="menu-label">Utilidades</label>
+        </div>
+        <search-row search="main.search"></search-row>
     </div>
 
-    <div class="row animated">
-
-    </div>
 </div>
 <div class="content-row">
     <div class="container-fluid animated" ui-view>

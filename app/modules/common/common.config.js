@@ -7,7 +7,12 @@
 
 (function () {
     "use strict";
-    function config($stateProvider) {
+    function config($stateProvider, uiGmapGoogleMapApiProvider) {
+        uiGmapGoogleMapApiProvider.configure({
+            key: "AIzaSyA0quwGqcRiTYvevyzHzJNUIjkOrcX8jWI",
+            libraries: "visualization"
+        });
+
         $stateProvider
             .state("app", {
                 url: "/app",

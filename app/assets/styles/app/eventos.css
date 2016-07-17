@@ -1,7 +1,7 @@
 .evento-row {
     padding: 2em 0;
     margin: 0;
-    border-top: 0.1em solid #8cc152;
+    border-top: 0.1em solid #257562;
 }
 
 .evento-row > .row {
@@ -13,5 +13,5 @@
 }
 
 .evento-list-icone > i {
-    color: #8cc152;
+    color: #257562;
 }
