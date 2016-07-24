@@ -1,5 +1,5 @@
 * {
-    color: #e6e9ed;
+    color: #f6f6f6;
 }
 
 body {
@@ -41,7 +41,7 @@ body {
 /* BUTTONS */
 .btn-clean {
     background: transparent;
-    border: 0.1em solid #e6e9ed;
+    border: 0.1em solid #f6f6f6;
 }
 
 .btn-clean:hover {

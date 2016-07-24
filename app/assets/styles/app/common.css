@@ -26,42 +26,42 @@
 
 .main-container > .row > * > i,
 .main-container > .row > * > label {
-    color: #e6e9ed !important;
+    color: #f6f6f6 !important;
 }
 
 .main-container > .row:nth-child(1) {
-    background: -webkit-linear-gradient(bottom right, #1E6150, #257562);
-    background: -o-linear-gradient(bottom right, #1E6150, #257562);
-    background: -moz-linear-gradient(bottom right, #1E6150, #257562);
-    background: linear-gradient(to bottom right, #1E6150, #257562);
+    background: -webkit-linear-gradient(bottom right, #3D772B, #569530);
+    background: -o-linear-gradient(bottom right, #3D772B, #569530);
+    background: -moz-linear-gradient(bottom right, #3D772B, #569530);
+    background: linear-gradient(to bottom right, #3D772B, #569530);
 }
 
 .main-container > .row:nth-child(2) {
-    background: -webkit-linear-gradient(bottom right, #4F9C6D, #55B07F);
-    background: -o-linear-gradient(bottom right, #4F9C6D, #55B07F);
-    background: -moz-linear-gradient(bottom right, #4F9C6D, #55B07F);
-    background: linear-gradient(to bottom right, #4F9C6D, #55B07F);
+    background: -webkit-linear-gradient(bottom right, #566C24, #6f8a30);
+    background: -o-linear-gradient(bottom right, #566C24, #6f8a30);
+    background: -moz-linear-gradient(bottom right, #566C24, #6f8a30);
+    background: linear-gradient(to bottom right, #566C24, #6f8a30);
 }
 
 .main-container > .row:nth-child(3) {
-    background: -webkit-linear-gradient(bottom right, #7caf7c, #89C388);
-    background: -o-linear-gradient(bottom right, #7CAF7C, #89C388);
-    background: -moz-linear-gradient(bottom right, #7CAF7C, #89C388);
-    background: linear-gradient(to bottom right, #7CAF7C, #89C388);
+    background: -webkit-linear-gradient(bottom right, #576319, #758122);
+    background: -o-linear-gradient(bottom right, #576319, #758122);
+    background: -moz-linear-gradient(bottom right, #576319, #758122);
+    background: linear-gradient(to bottom right, #576319, #758122);
 }
 
 .main-container > .row:nth-child(4) {
-    background: -webkit-linear-gradient(bottom right, #9CC382, #B0D796);
-    background: -o-linear-gradient(bottom right, #9CC382, #B0D796);
-    background: -moz-linear-gradient(bottom right, #9CC382, #B0D796);
-    background: linear-gradient(to bottom right, #9CC382, #B0D796);
+    background: -webkit-linear-gradient(bottom right, #656819, #83861e);
+    background: -o-linear-gradient(bottom right, #656819, #83861e);
+    background: -moz-linear-gradient(bottom right, #656819, #83861e);
+    background: linear-gradient(to bottom right, #656819, #83861e);
 }
 
 .main-container > .row:nth-child(5) {
-    background: -webkit-linear-gradient(bottom right, #87AC60, #98c070);
-    background: -o-linear-gradient(bottom right, #87AC60, #98c070);
-    background: -moz-linear-gradient(bottom right, #87AC60, #98c070);
-    background: linear-gradient(to bottom right, #87AC60, #98c070);
+    background: -webkit-linear-gradient(bottom right, #6B6010, #897c12);
+    background: -o-linear-gradient(bottom right, #6B6010, #897c12);
+    background: -moz-linear-gradient(bottom right, #6B6010, #897c12);
+    background: linear-gradient(to bottom right, #6B6010, #897c12);
 }
 
 .main-container.active > .row:not(.active) {
@@ -117,9 +117,9 @@
 .search-row input {
     background: transparent;
     border-color: transparent;
-    border-bottom: 0.1em solid #e6e9ed;
+    border-bottom: 0.1em solid #f6f6f6;
     width: 100%;
-    color: #e6e9ed;
+    color: #f6f6f6;
     outline: none;
 }
 
@@ -151,31 +151,27 @@
 }
 
 .search-row ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color: #e6e9ed;
+    color: #f6f6f6;
 }
 
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color: #e6e9ed;
+    color: #f6f6f6;
     opacity: 1;
 }
 
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color: #e6e9ed;
+    color: #f6f6f6;
     opacity: 1;
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #e6e9ed;
+    color: #f6f6f6;
 }
 
 .content-row {
     display: none;
     margin-top: 10em;
     transition: all ease-in-out 0.2s;
-}
-
-.main-container.search-hidden ~ .content-row {
-    margin-top: 20em;
 }
 
 .main-container.active ~ .content-row {
@@ -200,7 +196,14 @@
     padding: 0;
 }
 
-
 .angular-google-map img {
     max-width: none;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.scroll-y {
+    overflow-y: scroll;
 }

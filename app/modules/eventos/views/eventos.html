@@ -1,3 +1,4 @@
+<ui-view></ui-view>
 <div class="row evento-row"
      ng-repeat="evento in vm.eventoList | filter: main.search track by evento.id"
      ng-click="vm.select(evento.id);">

@@ -8,13 +8,14 @@
 (function () {
     "use strict";
 
-    function controller($window, uiGmapGoogleMapApi, $state) {
+    function controller($window, uiGmapGoogleMapApi, $state, $interval) {
         var vm = this;
 
         vm.mapLoaded = false;
 
-        vm.selectEvent = function (e) {
-            $state.go("app.repositorio.detalhes", {id: e.key});
+        vm.selectEvent = function (e, action, object) {
+            $state.go("app.repositorio.detalhes", {id: object.id});
+            vm.map.center = object.coords;
         };
 
         uiGmapGoogleMapApi.then(function () {
@@ -34,6 +35,7 @@
                     maxZoom: 20,
                     minZoom: 3,
                     scrollwheel: false,
+                    zoomControl: false,
                     mapTypeId: $window.google.maps.MapTypeId.TERRAIN
                 },
                 control: undefined

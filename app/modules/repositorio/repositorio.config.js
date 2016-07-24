@@ -15,14 +15,10 @@
                 controller: "RepositorioController as vm"
             })
             .state("app.repositorio.detalhes", {
-                views: {
-                    detail: {
-                        url: "/repositorio/{id}",
-                        templateUrl: "modules/repositorio/views/detalhes-repositorio.html",
-                        controller: "DetalhesRepositorioController as vm",
-                        hideSearch: true
-                    }
-                }
+                url: "/repositorio/{id}",
+                templateUrl: "modules/repositorio/views/detalhes-repositorio.html",
+                controller: "DetalhesRepositorioController as vm",
+                hideSearch: true
             });
     }
 
